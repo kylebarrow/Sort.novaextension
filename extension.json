@@ -1,0 +1,27 @@
+{
+    "identifier": "io.barrow.sort",
+    "name": "Sort",
+    "organization": "Kyle Barrow",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:javascript"
+    ],
+    
+    "entitlements": {
+        
+    },
+    
+    "commands": {
+        "editor": [
+            {
+                "title": "Foobar",
+                "command": "sort.insertFoobar"
+            }
+        ]
+    }
+}
