@@ -2,25 +2,22 @@
     "identifier": "io.barrow.sort",
     "name": "Sort",
     "organization": "Kyle Barrow",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Alphanumeric line sorting",
     "version": "1.0",
-    "categories": ["commands"],
-    
+    "repository": "https://github.com/kylebarrow/Sort.novaextension",
+    "bugs": "https://github.com/kylebarrow/Sort.novaextension/issues",
+    "categories": ["commands"],   
     "main": "main.js",
-    
     "activationEvents": [
         "onLanguage:javascript"
-    ],
-    
-    "entitlements": {
-        
-    },
-    
+    ],  
+    "entitlements": {},   
     "commands": {
         "editor": [
             {
-                "title": "Foobar",
-                "command": "sort.insertFoobar"
+                "title": "Sort Selection",
+                "command": "sort.sortSelection",
+                "when": "editorHasFocus && editorHasSelection"
             }
         ]
     }
